@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="registraion_form.css">
+    <link rel="stylesheet" type="text/css" href="dashboardkkk.css">
+    <link rel="stylesheet" type="text/css" href="to%20do%20list.css">
+   
+   
+    <style>
+    * {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 13%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 500px;
+  border-radius: 10px;
+  border-top: 5px solid #0080ff;
+}
+        .tablimks {
+            border-radius: 10px;
+        }
+        .thth{
+            background-color: #0080ff;
+            color: aliceblue;
+        }
+</style>
+</head>
+<body>
+    
+    <div class="header" style="background-color:powderblue;text-align: center;width: 100%;margin-top:0;">
+        <h2>hesder</h2>
+    </div>
+
+<div class="tab">
+    <button class="tablinks" onclick="openMenu(event, 'dash')" id="defaultOpen" >Dasgboard</button>
+  <button class="tablinks" onclick="openMenu(event, 'regis')" >Registration</button>
+  <button class="tablinks" onclick="openMenu(event, 'atten')">Attendence</button>
+  <button class="tablinks" onclick="openMenu(event, 'tt')">TimeTable</button>
+    <button class="tablinks" onclick="openMenu(event, 'na')">News/Activity</button>
+    <button class="tablinks" onclick="openMenu(event, 'report')">Report</button>
+    <button class="tablinks" onclick="openMenu(event, 'sd')">Student Details</button>
+</div>
+
+    <div id="dash" class="tabcontent">
+        <div class="dashb" style="margin-top: 10px;">
+<div class="flip-box 1">
+  <div class="flip-box-inner 1">
+    <div class="flip-box-front 1" style="background-color:darkblue;">
+      <h2 class="headings">0</h2>
+        <p class="mameof">admins</p>
+    </div>
+    <div class="flip-box-back 1">
+      <h2>View details</h2>
+    </div>
+  </div>
+    </div>
+    
+    <div class="flip-box 2">
+  <div class="flip-box-inner 2">
+    <div class="flip-box-front 2" style="background-color:cornflowerblue;">
+      <h2 class="headings">0</h2>
+        <p class="mameof">teachers</p>
+    </div>
+    <div class="flip-box-back 2">
+      <h2>View details</h2>
+    </div>
+  </div>
+    </div>
+    
+        <div class="flip-box 3">
+  <div class="flip-box-inner 3">
+    <div class="flip-box-front 3" style="background-color:limegreen;">
+      <h2 class="headings">0</h2>
+        <p class="mameof">Students</p>
+    </div>
+    <div class="flip-box-back 3">
+      <h2>View details</h2>
+    </div>
+  </div>
+    </div>
+    
+        <div class="flip-box 4">
+  <div class="flip-box-inner 4">
+    <div class="flip-box-front 4" style="background-color:orangered;">
+      <h2 class="headings">0</h2>
+        <p class="mameof">Events</p>
+    </div>
+    <div class="flip-box-back 4">
+      <h2>View details</h2>
+    </div>
+  </div>
+    </div>
+    </div>
+        
+    </div>
+    
+<div id="regis" class="tabcontent">
+  <h3>User Registration</h3>
+  <p>please selcet user</p><br>
+    <input type="button" class="regbtn" value="Student Rgistraion" onclick="document.getElementById('id01').style.display='block'" style="width:auto">
+    <input type="button" class="regbtn" value="Faculty Registraion" >
+</div>
+
+<div id="atten" class="tabcontent">
+  <h3>Attendence:</h3>
+    <div class="col-container">
+    <div class="col">
+    <h5>Batch</h5>
+    <select>
+    <option>2016-17</option>
+    <option>2017-18</option>
+    <option>2018-19</option>
+    <option>2019-20</option>
+    </select>
+    
+    <h5>Branch</h5>
+    <select>
+    <option>Mechanical</option>
+    <option>Civil</option>
+    <option>Electrical</option>
+    <option>I T</option>
+    <option>Mining </option>
+    <option>Electronics</option>
+    </select>
+    
+    <h5>Student Name</h5>   
+    <select>
+    <option>student name 1</option>
+        <option>sttudent name 2</option>
+        <option>student 3</option>
+    </select>
+    </div>
+    <div class="col">
+    <h5>Month</h5>
+    <select>
+    <option>JAN</option>
+    <option>FAB</option>
+    <option>MARCH</option>
+    <option>APRIL</option>
+    <option>MAY</option>
+    <option>JUNE</option>
+    <option>JULY</option>
+    <option>AUG</option>
+    <option>SEPT</option>
+    <option>OCT</option>
+    <option>NOV</option>
+    <option>DEC</option>
+    </select>
+    
+    <h5>year</h5>
+    <select>
+    <option>2017</option>
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+        <option>2021</option>
+    </select>
+    </div>
+    </div>
+</div>
+
+<div id="tt" class="tabcontent">
+  <h3>Time Table</h3>
+    <select>
+    <option onclick="openMenu(event, 'ct">ClassTest</option>
+        <option onclick="openMenu(event, 'ssn">session</option>
+    </select>
+               <table>
+                <tr>
+                    <th class="thth">DATE/SEMESTER</th>
+                    <th class="thth">3ed</th>
+                    <th class="thth">5th</th>
+                    <th class="thth">7th</th>
+                </tr>
+                <tr>
+                    <td><b>23/10/18</b>b></td>
+                    <td>EDC-PRV</td>
+                    <td>Adv.Micro-ACS</td>
+                    <td>WC-MCT</td>
+                </tr>
+                <tr>
+                    <td><b>24/10/18</b>b></td>
+                    <td>M3-II</td>s
+                    <td>ANTENNA-LIC</td>
+                    <td>RADAR-CT</td>
+                </tr>
+                <tr>
+                    <td><b>25/10/18</b>b></td>
+                    <td>DLD-NAS</td>
+                    <td>DGITA_C++</td>
+                    <td>MICROWAVE COMMUNICATION</td>
+                </tr>
+            </table>
+         </div>
+    
+    <div id="na" class="tabcontent">
+  <h3>News & Activities</h3>
+  <div id="myDIV" class="header">
+  <h2 style="margin:5px">ADD EVENTS</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>SESSION START</li>
+  <li class="checked">CLASS TESTS</li>
+  <li>ENGINEERS DAY</li>
+  <li>TECH FEST</li>
+  <li>ENVIROMENT DAY</li>
+
+</ul>
+</div>
+    <div id="report" class="tabcontent">
+  <h3>Report</h3>
+</div>
+    
+    <div id="sd" class="tabcontent">
+  <h3>Student details</h3>
+</div>
+    
+    
+    <div id="id01" class="modal">
+    <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Full Name:</b></label>
+      <input type="text" style="text-align: left" placeholder="Enter your full name" name="uname" required>
+
+      <label for="father" style="text-align: left"><b>Fathers Name:</b></label>
+      <input type="text" placeholder="Enter Fathers Name" name="fatname" required>
+        
+        <label for="motherr" style="text-align: left"><b>Mothers  Name:</b></label>
+      <input type="text" placeholder="Enter Mothers Name" name="momname" required>
+        
+        <label for="dob" style="text-align: left"><b>EnterDate Of Birth:</b></label>
+      <input type="text" placeholder="DD/MMYYYY" name="DOB" required>
+        
+        <label for="cat"><b>Categery</b></label>
+        <select>
+         <option value="0">GENRAL</option>
+        <option value="1">OBC</option>
+        <option value="2">SC</option>
+        <option value="3">ST</option>
+        </select>
+    
+        <label for="gender"><b>Gender</b></label>
+        <select>
+        <option>Male</option>
+        <option>Female</option>
+        </select>
+        
+      <button type="submit">next</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+
+<script>
+function openMenu(evt, MenuName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(MenuName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+    
+    // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+/*attendence button*/
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+   
+</body>
+</html> 
